@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
 
 const HomeStats = ({ statsData }) => {
 
@@ -17,24 +17,22 @@ const HomeStats = ({ statsData }) => {
     ];
     return (
         <div className="piechart__container">
-            <ResponsiveContainer width="80%">
-                <PieChart width={208} height={208} className="piechart">
-                    <Pie
-                        data={data}
-                        cx={100}
-                        cy={100}
-                        startAngle={-270}
-                        innerRadius={80}
-                        outerRadius={82}
-                        dataKey="value"
-                    >
-                        {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} strokeWidth={0} />
-                        ))}
+            <PieChart width={208} height={208} className="piechart">
+                <Pie
+                    data={data}
+                    cx={100}
+                    cy={100}
+                    startAngle={-270}
+                    innerRadius={80}
+                    outerRadius={82}
+                    dataKey="value"
+                >
+                    {data.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} strokeWidth={0} />
+                    ))}
 
-                    </Pie>
-                </PieChart>
-            </ResponsiveContainer>
+                </Pie>
+            </PieChart>
             <div className="piechart__label">
                 <img src={statsData.icon} alt="" />
                 <p style={{ fontSize: '24px', fontFamily: 'Libre Baskerville' }}>0</p>

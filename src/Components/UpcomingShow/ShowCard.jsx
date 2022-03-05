@@ -12,7 +12,7 @@ const ShowCard = ({ userDetails }) => {
                 <div className="card__moreInfo">
                     <p>
                         More Info
-                        <i class="far fa-arrow-right"></i>
+                        <i className="far fa-arrow-right"></i>
                     </p>
                     <img src={save} alt="" />
                 </div>

@@ -1,0 +1,90 @@
+.review__wrapper{
+    padding: 2rem 10%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+}
+.review__heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review__heading h3{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+}
+.review__heading .navigator{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigator span{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.navigator span i{
+    cursor: pointer;
+}
+.navigator span i:hover{
+    color: darkblue;
+}
+.reviewCard__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.reviewCard__wrapper{
+    width: 360px;
+    height: 248px;
+    border-radius: 16px;
+    position: relative;
+    margin: 2rem 0;
+}
+.reviewCard__wrapper .reviewCard__shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+    border-radius: 16px;
+}
+.reviewCard__wrapper .reviewCard__data{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0A0B1A;
+    border: 2px solid #E5AF56;
+    border-radius: 16px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.reviewCard__data .card__userName{
+    font-family: 'Quattrocento';
+}
+.reviewCard__data .reviewCard__userDetails{
+    display: flex;
+    align-items: center;
+}
+.reviewCard__userDetails .reviewCard__data{
+    margin-left: 20px;
+}
+.card__userData .card__userCountry{
+    display: flex;
+    align-items: center;
+}
+.card__userData .card__userCountry span{
+    color: #E5C558;
+    font-size: 11px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 10px;
+}

@@ -28,7 +28,7 @@ const userData = [
 ]
 
 
-const UserReview = () => {
+const Review = () => {
     return (
         <div className='review__wrapper'>
             <div className="review__heading">
@@ -44,7 +44,7 @@ const UserReview = () => {
                 </div>
             </div>
             <hr className='upcoming__showHr' />
-            <div className="reviewCard __container">
+            <div className="reviewCard__container">
                 <ReviewCard userData={userData[0]} />
                 <ReviewCard userData={userData[1]} />
                 <ReviewCard userData={userData[2]} />
@@ -53,4 +53,4 @@ const UserReview = () => {
     );
 };
 
-export default UserReview;
+export default Review;

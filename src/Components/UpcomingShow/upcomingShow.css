@@ -1,0 +1,104 @@
+.upcoming__showWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 50px 10%;
+  background: #000;
+  color: #fff;
+  margin-top: 80px;
+}
+.upcoming__showHeader h1 {
+  font-family: "Libre Baskerville", sans-serif;
+}
+.upcoming__showHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upcoming__showHeader p {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5c558;
+  cursor: pointer;
+}
+.upcoming__showHeader p:hover {
+  color: #c59f21;
+}
+.upcoming__showHr {
+  border-radius: 16px;
+  margin-top: 10px;
+  width: 48px;
+  height: 3px;
+  background-color: #0259eb;
+  border: none;
+}
+
+/*--------card container-----------*/
+.show__contactFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.show__cardContainer {
+  width: 268px;
+  height: 24rem;
+  position: relative;
+  margin-top: 2rem;
+}
+.show__cardContainer .back__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  background: linear-gradient(
+    rgba(48, 26, 104, 1) 100%,
+    rgba(35, 76, 151, 1) 100%
+  );
+  border-radius: 8px;
+}
+.show__cardContainer .show__cardDetails {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #111229;
+  border-radius: 8px;
+}
+.show__cardContainer .show__cardDetails .card__dataDetails {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  height: calc(100% - 230px);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.show__cardContainer .show__cardDetails .card__genre {
+  background: #e5c558;
+  height: 18px;
+  width: max-content;
+  padding: 0 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show__cardContainer .show__cardDetails .card__moreInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.show__cardDetails .card__moreInfo p {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0259eb;
+  cursor: pointer;
+}
+.show__cardDetails .card__moreInfo img {
+  cursor: pointer;
+}
+.show__cardDetails .card__moreInfo img:hover {
+  background-image: url("../../assets/icons/Group.png");
+}

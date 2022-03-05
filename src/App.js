@@ -1,4 +1,3 @@
-import './App.css';
 import Home from "./Components/Home/Home"
 import UpcomingShow from "./Components/UpcomingShow/UpcomingShow"
 import Review from "./Components/Review/Review"

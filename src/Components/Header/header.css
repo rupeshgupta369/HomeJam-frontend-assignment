@@ -1,0 +1,33 @@
+.header__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper .logo {
+  cursor: pointer;
+}
+.header__wrapper .desktop__view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 28%;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header__wrapper .desktop__view .nav__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 24%;
+}
+.header__wrapper .desktop__view span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__wrapper .mobile__view {
+  display: none;
+}
